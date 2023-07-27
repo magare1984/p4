@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title> App by Mayur Agare </title>
+	<link rel="stylesheet" href="mayur.css">
+	<script>
+		function find()
+		{
+			event.preventDefault();
+			let num=document.getElementById("num");
+			let ans=document.getElementById("ans");
+			let n=parseFloat(num.value);
+			let r= n * n;
+			localStorage.setItem("res",r);
+			window.location.href = "result.html";
+		}
+	</script>
+</head>
+<body>
+<center>
+	<div class="nav">
+		<a href="index.html"> HOME </a>
+		<a href="about.html"> ABOUT </a>
+	</div>
+	<h1> Square Finder </h1>
+	<form onsubmit="find()">
+	<input type = "number" step="any" placeholder="Enter Number" id="num" />
+	<br><br>
+	<input type="submit" value="Find Square" />
+	</form>
+	<h1 id="ans" />
+</center>
+</body>
+</html>
+
+
+			

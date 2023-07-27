@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title> App by Mayur Agare </title>
+	<link rel="stylesheet" href="mayur.css">
+</head>
+<body>
+<center>
+	<div class="nav">
+		<a href="index.html"> HOME </a>
+		<a href="about.html"> ABOUT </a>
+	</div>
+	<h1> Result Page </h1>
+	<h2  id="ans"> </h2>
+	<script>
+		let ans = document.getElementById("ans");
+		let r  = localStorage.getItem("res");
+		if (r == null)
+		{
+			alert("u did not enter");
+			ans.innerHTML = "u didnot enter number";
+		}
+		else
+		{
+			ans.innerHTML = "square = " + r;
+		}
+	</script>
+
+</center>
+</body>
+</html>
+
+
+			
